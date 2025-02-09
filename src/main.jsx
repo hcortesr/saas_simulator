@@ -1,10 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client"
 import { SideBar } from "./react/SideBar";
+import { Header } from "./react/Header";
+import { CalculatorApp } from "./react/miniApps/Calculator/CalculatorApp";
 import './css/style.css';
+import './css/headerStyle.css'
+import './css/calculatorStyle.css'
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(<>
-    <header><h1>Mis Notas</h1></header>
-    <SideBar />
+    <Header/>
+    <main>
+        <SideBar />
+        <CalculatorApp/>
+    </main>
+
 </>);

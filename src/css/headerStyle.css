@@ -1,0 +1,18 @@
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.logoBar {
+    display: flex;
+    flex-direction: row;
+
+}
+.profileBar {
+    display: flex;
+    flex-direction: row;
+}
+.profileBar-sub1 {
+    display: flex;
+}

@@ -11,12 +11,12 @@ function SideBarButton({ children, title }) {
 export function SideBar(props) {
     return (<aside className="sideBar">
         <SideBarButton
-            title="Home">
+            title="Calculator">
             <AiOutlineHome />
         </SideBarButton>
 
         <SideBarButton
-            title="Home">
+            title="Tasks">
             <TbWorldWww />
         </SideBarButton>
 
