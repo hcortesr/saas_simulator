@@ -14,7 +14,9 @@ export function ButtonsCalculator() {
             <Button val="10"/>
             <Button val="11"/>
             <Button val="12"/>
-
+            <Button val="13"/>
+            <Button val="14"/>
+            <Button val="15"/>
         </div>
     );
 }

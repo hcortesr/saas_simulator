@@ -1,33 +1,40 @@
-import { AiOutlineHome } from "react-icons/ai";
-import { TbWorldWww } from "react-icons/tb";
-import { MdMailOutline } from "react-icons/md";
-import { GrStorage } from "react-icons/gr";
+import { IoCalculatorOutline } from "react-icons/io5";
+import { FaTasks } from "react-icons/fa";
+import { MdOutlineTimer } from "react-icons/md";
+import { AiOutlineFieldNumber } from "react-icons/ai";
+import { useContext } from "react";
+import { CurrentAppContext } from "./Contexts/CurrentAppProvider";
 
-
-function SideBarButton({ children, title }) {
-    return (<button>{children} {title}</button>);
+function SideBarButton({ children, title, fun }) {
+    return (<button className="side-btn" onClick={fun}>{children} {title}</button>);
 }
 
 export function SideBar(props) {
+
+    const {setCurrentApp} = useContext(CurrentAppContext);
+
     return (<aside className="sideBar">
         <SideBarButton
-            title="Calculator">
-            <AiOutlineHome />
+            title="Calculator"
+            fun={() => setCurrentApp("calculator")}>
+            <IoCalculatorOutline />
         </SideBarButton>
 
         <SideBarButton
-            title="Tasks">
-            <TbWorldWww />
+            title="Tasks"
+            fun={() => setCurrentApp("tasks")}>
+            <FaTasks />
         </SideBarButton>
 
         <SideBarButton
-            title="Home">
-            <MdMailOutline />
+            title="Cronometer"
+            fun={() => setCurrentApp("cronometer")}>
+            <MdOutlineTimer />
         </SideBarButton>
 
         <SideBarButton
-            title="Home">
-            <GrStorage />
+            title="Unit Converter">
+            <AiOutlineFieldNumber />
         </SideBarButton>
     </aside>);
 }

@@ -1,19 +1,19 @@
-import React from "react";
+import React, {StrictMode} from "react";
 import ReactDOM from "react-dom/client"
-import { SideBar } from "./react/SideBar";
-import { Header } from "./react/Header";
-import { CalculatorApp } from "./react/miniApps/Calculator/CalculatorApp";
+import { CurrentAppContext, CurrentAppProvider } from "./react/Contexts/CurrentAppProvider";
+import { App } from "./react/App";
 import './css/style.css';
 import './css/headerStyle.css'
 import './css/calculatorStyle.css'
+import './css/tasksStyle.css'
+import './css/cronometerStyle.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(<>
-    <Header/>
-    <main>
-        <SideBar />
-        <CalculatorApp/>
-    </main>
-
+    <StrictMode>
+        <CurrentAppProvider>
+            <App/>
+        </CurrentAppProvider>
+    </StrictMode>
 </>);
