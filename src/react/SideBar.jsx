@@ -11,7 +11,7 @@ function SideBarButton({ children, title, fun }) {
 
 export function SideBar(props) {
 
-    const {setCurrentApp} = useContext(CurrentAppContext);
+    const { setCurrentApp } = useContext(CurrentAppContext);
 
     return (<aside className="sideBar">
         <SideBarButton
@@ -33,7 +33,8 @@ export function SideBar(props) {
         </SideBarButton>
 
         <SideBarButton
-            title="Unit Converter">
+            title="Unit Converter"
+            fun={() => setCurrentApp("unit-converter")}>
             <AiOutlineFieldNumber />
         </SideBarButton>
     </aside>);

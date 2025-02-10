@@ -7,7 +7,7 @@ export function CurrentAppProvider(props) {
 
     return (
         <CurrentAppContext.Provider
-        value={{currentApp, setCurrentApp}}>
+            value={{ currentApp, setCurrentApp }}>
             {props.children}
         </CurrentAppContext.Provider>
 
