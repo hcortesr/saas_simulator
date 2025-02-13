@@ -2,14 +2,17 @@ import { useContext } from "react";
 import { UnitContext } from "../../Contexts/UnitProvider";
 
 export function UnitSelector({ fun }) {
+
     return (
         <select className="unit-selector" name="" id="" onChange={fun}>
-            <option value="aaa">opcion 1</option>
-            <option value="aaaa">opcion 2</option>
-            <option value="aaaba">opcion 3</option>
-            <option value="aaav">opcion 4</option>
-            <option value="aaare">opcion 5</option>
-            <option value="aaahs">opcion 6</option>
+            <option value={0.9144}>Yard</option>
+            <option value={5.0292}>Rod</option>
+            <option value={1609.344}>Mile</option>
+            <option value={0.3048}>Feet</option>
+            <option value={0.0254}>Inch</option>
+            <option value={20.1168}>Chains</option>
+            <option value={1852}>Nautical Mile</option>
+            <option value={1}>Meter</option>
         </select>
     );
 }
@@ -20,13 +23,6 @@ export function UnitConApp() {
 
     const context = useContext(UnitContext);
 
-    function handleChangeSel1(e) {
-        context.setSet1(e.target.value);
-    }
-    function handleChangeSel2(e) {
-        context.setSet2(e.target.value);
-    }
-
     return (
         <div className="unit-frame">
             <h1>Unit Converter App</h1>
@@ -34,18 +30,20 @@ export function UnitConApp() {
                 <div className="unit-opt-cont">
                     <div className="unit-opt">
                         <UnitSelector
-                            fun={handleChangeSel1} />
-                        <input className="unit-res" type="text" name="" id="" />
+                            fun={context.hadleChangeSel1} />
+                        <input onChange={(event) => {
+                            context.setCurrent(event.target.value);
+                        }} placeholder="Input the value to convert" className="unit-res" type="text" name="" id="" />
                     </div>
 
                     <div className="unit-opt">
                         <UnitSelector
-                            fun={handleChangeSel2} />
-                        <div className="unit-res">ñlkj</div>
+                            fun={context.hadleChangeSel2} />
+                        <div className="unit-res">{context.res}</div>
                     </div>
                 </div>
 
-                <button className="unit-calc">Calcular</button>
+                <button onClick={context.updateRes} className="unit-calc">Calcular</button>
 
             </div>
         </div>
