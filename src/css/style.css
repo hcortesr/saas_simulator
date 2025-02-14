@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 :root {
-    --orange1: rgb(255, 238, 207);
-    --orange1-hover: rgb(255, 222, 159);
-    --orange1-active: rgb(243, 210, 150);
+    --orange1-hover: rgb(255, 167, 74);
+    --orange1-active: rgb(235, 152, 63);
     --gray-border: 1px solid rgb(215, 215, 215);
+    --myorange: rgb(255, 132, 0);
+    --myorangelight: rgb(255, 163, 65);
 }
 
 * {
@@ -42,9 +43,10 @@ main {
     width: 300px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 10px;
+
+
     border-right: 2px solid rgb(234, 234, 234);
+    background-color: var(--myorange);
 
 }
 
@@ -53,21 +55,22 @@ main {
     font-size: 1.4rem;
     background-color: transparent;
     border: none;
-    border-radius: 20px;
+    /* border-radius: 20px; */
+    color: white;
 }
 
 .side-btn:hover {
     padding: 20px;
     font-size: 1.4rem;
-    background-color: rgb(234, 234, 234);
+    background-color: rgba(255, 255, 255, 0.269);
     border: none;
 
 }
 
 .side-btn-selected {
-    background-color: var(--orange1);
+    background-color: rgba(255, 255, 255, 0.269);
 }
 
 .side-btn-selected:hover {
-    background-color: var(--orange1);
+    background-color: rgba(255, 255, 255, 0.269);
 }

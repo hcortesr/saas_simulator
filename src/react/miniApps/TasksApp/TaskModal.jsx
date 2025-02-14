@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { TasksContext } from "../../Contexts/TasksProvider";
+import { IoMdCloseCircle } from "react-icons/io";
 
 export function TaskModal() {
 
@@ -13,7 +14,11 @@ export function TaskModal() {
                 <div className="container-btn">
                     <button onClick={context.addNote} className="btn-cn">Create Note</button>
                 </div>
+
+                <IoMdCloseCircle className="modal-close" size={30} />
             </div>
+
+
         </div>
     )
 }

@@ -24,7 +24,16 @@
 .crono-btn-cont button {
     padding: 15px;
     font-size: 2rem;
-    background-color: var(--orange1);
-    border: var(--gray-border);
+    background-color: var(--myorange);
+    border: none;
+    color: white;
     border-radius: 10px;
+}
+
+.crono-btn-cont button:hover {
+    background-color: var(--orange1-hover);
+}
+
+.crono-btn-cont button:active {
+    background-color: var(--orange1-active);
 }

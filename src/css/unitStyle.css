@@ -34,23 +34,43 @@
 
     font-size: 2rem;
     letter-spacing: 2px;
-    background-color: var(--orange1);
-    border: var(--gray-border);
+    background-color: var(--myorange);
+    border: none;
+    color: white;
     border-radius: 10px;
+}
+
+.unit-calc:hover {
+    background-color: var(--orange1-hover);
+}
+
+.unit-calc:active {
+    background-color: var(--orange1-active);
 }
 
 .unit-opt {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    width: 300px;
+    width: 400px;
 
 }
 
 .unit-selector {
     padding: 10px;
+    font-size: 1.3rem;
+    color: white;
+    background-color: var(--myorangelight);
+    border: none;
 }
 
 .unit-res {
-    padding: 10px;
+    font-size: 1.3rem;
+    height: 40px;
+    border: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
 }

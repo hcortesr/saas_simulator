@@ -9,7 +9,7 @@ export function Task({ title, content, ID }) {
     return (
         <div className="task">
             <IoMdCloseCircle className="task-close" size={30} onClick={() => context.removeNote(ID)} />
-            <h3>{title}</h3>
+            <h3 className="note-title">{title}</h3>
             <p>{content}</p>
         </div>
     );

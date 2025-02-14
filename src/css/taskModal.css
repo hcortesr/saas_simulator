@@ -4,6 +4,7 @@
     background-color: rgba(0, 0, 0, 0.51);
 
     position: absolute;
+    top: 0;
     z-index: 1;
 
     display: flex;
@@ -19,6 +20,8 @@
     background-color: white;
     border-radius: 10px;
     padding: 30px;
+    padding-top: 50px;
+    position: relative;
 }
 
 label {
@@ -27,8 +30,6 @@ label {
     align-items: center;
     width: 400px;
 }
-
-
 
 label input,
 label textarea {
@@ -49,6 +50,23 @@ label textarea {
 .btn-cn {
     padding: 7px;
     border-radius: 5px;
+    background-color: var(--myorange);
 
     font-size: 1.2rem;
+    border: none;
+    color: white;
+}
+
+.btn-cn:hover {
+    background-color: var(--orange1-hover);
+}
+
+.btn-cn:activate {
+    background-color: var(--orange1-active);
+}
+
+.modal-close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
 }
