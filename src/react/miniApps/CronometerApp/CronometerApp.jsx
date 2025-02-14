@@ -34,13 +34,21 @@ export function OptStopped() {
 export function CronometerApp() {
     const context = useContext(CronometerContext);
 
+    function zeroProblem(num) {
+        if (num < 10) {
+            return "0" + num;
+        } else {
+            return num;
+        }
+    }
+
     return (
         <div className="crono-frame">
 
             <h1>Cronometer App</h1>
 
             <div className="crono-border">
-                <div className="crono-screen">{Math.floor(context.sec / 60)}:{context.sec % 60}</div>
+                <div className="crono-screen">{Math.floor(context.sec / 60)}:{zeroProblem(context.sec % 60)}</div>
                 {(() => {
                     switch (context.cronoState) {
                         case "off":
