@@ -24,4 +24,7 @@
 .crono-btn-cont button {
     padding: 15px;
     font-size: 2rem;
+    background-color: var(--orange1);
+    border: var(--gray-border);
+    border-radius: 10px;
 }

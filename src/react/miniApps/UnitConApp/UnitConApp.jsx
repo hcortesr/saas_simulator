@@ -25,7 +25,7 @@ export function UnitConApp() {
 
     return (
         <div className="unit-frame">
-            <h1>Unit Converter App</h1>
+            <h2 className="appTitle">Unit Converter App</h2>
             <div className="unit-border">
                 <div className="unit-opt-cont">
                     <div className="unit-opt">

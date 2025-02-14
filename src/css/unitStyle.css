@@ -34,6 +34,9 @@
 
     font-size: 2rem;
     letter-spacing: 2px;
+    background-color: var(--orange1);
+    border: var(--gray-border);
+    border-radius: 10px;
 }
 
 .unit-opt {

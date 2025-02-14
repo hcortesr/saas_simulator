@@ -9,7 +9,7 @@
     /* background-color: red; */
 }
 
-.calc-frame h2 {
+.appTitle {
     font-size: 3rem;
 }
 
@@ -18,7 +18,8 @@
     max-width: 500px;
     overflow: hidden;
 
-    border-radius: 30px;
+
+    border-radius: 5px;
 
 }
 
@@ -29,6 +30,10 @@
     justify-content: center;
     align-items: center;
     font-size: 3rem;
+    border: 1px solid rgb(215, 215, 215);
+    background-color: var(--orange1);
+    border-radius: 4px;
+    margin-bottom: 10px;
 
 }
 
@@ -36,4 +41,20 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     height: 300px;
+    gap: 5px;
+}
+
+.calc-btns button {
+    border: var(--gray-border);
+    background-color: var(--orange1);
+    border-radius: 4px;
+
+}
+
+.calc-btns button:hover {
+    background-color: var(--orange1-hover);
+}
+
+.calc-btns button:active {
+    background-color: var(--orange1-active);
 }

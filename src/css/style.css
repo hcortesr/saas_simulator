@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+:root {
+    --orange1: rgb(255, 238, 207);
+    --orange1-hover: rgb(255, 222, 159);
+    --orange1-active: rgb(243, 210, 150);
+    --gray-border: 1px solid rgb(215, 215, 215);
+}
+
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     box-sizing: border-box;
 }
+
 html {
     font-size: 16px;
     font-family: "Plus Jakarta Sans", serif;
@@ -16,9 +24,10 @@ html {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    
+
     overflow: hidden;
 }
+
 main {
     display: flex;
     flex-direction: row;
@@ -30,12 +39,35 @@ main {
 }
 
 .sideBar {
-    width: 600px;
+    width: 300px;
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-right: 2px solid rgb(234, 234, 234);
 
 }
+
 .side-btn {
     padding: 20px;
     font-size: 1.4rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+}
+
+.side-btn:hover {
+    padding: 20px;
+    font-size: 1.4rem;
+    background-color: rgb(234, 234, 234);
+    border: none;
+
+}
+
+.side-btn-selected {
+    background-color: var(--orange1);
+}
+
+.side-btn-selected:hover {
+    background-color: var(--orange1);
 }

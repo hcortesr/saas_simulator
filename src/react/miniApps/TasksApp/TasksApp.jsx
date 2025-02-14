@@ -13,7 +13,7 @@ export function TasksApp() {
 
             {context.modal && <TaskModal />}
 
-            <h2>Tasks App</h2>
+            <h2 className="appTitle">Tasks App</h2>
             <div className="tasks-border">
                 <button className="btn-new-note" onClick={() => context.setModal(true)}>
                     New Note

@@ -26,6 +26,7 @@ export function ButtonsCalculator() {
             <button onClick={context.calcularResultado} value="=" >=</button>
             <button onClick={() => context.manejarClick("+")} value="+" >+</button>
 
+            <button onClick={() => context.manejarClick("00")} value="00" >00</button>
             <button onClick={() => context.manejarClick("(")} value="(" >(</button>
             <button onClick={() => context.manejarClick(")")} value=")" >)</button>
             <button onClick={context.limpiarPantalla} value="C" >C</button>

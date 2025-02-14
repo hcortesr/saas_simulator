@@ -45,7 +45,7 @@ export function CronometerApp() {
     return (
         <div className="crono-frame">
 
-            <h1>Cronometer App</h1>
+            <h1 className="appTitle">Cronometer App</h1>
 
             <div className="crono-border">
                 <div className="crono-screen">{Math.floor(context.sec / 60)}:{zeroProblem(context.sec % 60)}</div>

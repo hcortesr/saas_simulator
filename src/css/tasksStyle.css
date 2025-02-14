@@ -10,11 +10,6 @@
     position: relative;
 }
 
-.tasks-frame h2 {
-    font-size: 2rem;
-
-}
-
 .tasks-border {
     width: 100%;
     max-width: 900px;
@@ -26,12 +21,14 @@
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+    border: var(--gray-border);
 }
 
 .task {
     height: 250px;
     width: 250px;
     position: relative;
+    border: var(--gray-border);
 }
 
 .task-close {
