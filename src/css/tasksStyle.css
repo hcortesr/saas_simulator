@@ -6,16 +6,20 @@
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
-    
+
+    position: relative;
 }
+
 .tasks-frame h2 {
     font-size: 2rem;
-    
+
 }
+
 .tasks-border {
     width: 100%;
     max-width: 900px;
     min-height: 500px;
+    position: relative;
 
     display: flex;
     justify-content: center;
@@ -23,7 +27,36 @@
     gap: 20px;
     padding: 20px;
 }
+
 .task {
     height: 250px;
     width: 250px;
+    position: relative;
+}
+
+.task-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+.btn-new-note {
+    position: absolute;
+    left: 0;
+    top: -55px;
+    background-color: rgb(22, 209, 56);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 7px;
+}
+
+.btn-new-note:hover {
+    background-color: rgb(19, 171, 47);
+}
+
+.btn-new-note:active {
+    background-color: rgb(8, 87, 23);
 }

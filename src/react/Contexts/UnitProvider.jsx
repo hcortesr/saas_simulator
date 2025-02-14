@@ -4,8 +4,8 @@ export const UnitContext = createContext();
 
 export function UnitProvider(props) {
 
-    const [sel1, setSel1] = useState(0);
-    const [sel2, setSel2] = useState(0);
+    const [sel1, setSel1] = useState(0.9144);
+    const [sel2, setSel2] = useState(1 / 0.9144);
     const [res, setRes] = useState(0);
     const [current, setCurrent] = useState(0);
 
