@@ -38,14 +38,26 @@
     border: none;
     color: white;
     border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
 }
 
-.unit-calc:hover {
-    background-color: var(--orange1-hover);
+.unit-calc::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.244);
+    top: 0;
+    left: -210%;
+    transform: skewX(-30deg);
+    transition-duration: 0.2s;
 }
 
-.unit-calc:active {
-    background-color: var(--orange1-active);
+.unit-calc:hover::after {
+
+    left: -80%;
 }
 
 .unit-opt {

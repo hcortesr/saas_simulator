@@ -24,14 +24,22 @@
 .crono-btn-cont button {
     padding: 15px;
     font-size: 2rem;
-    background-color: var(--myorange);
+
     border: none;
     color: white;
     border-radius: 10px;
+
+    background-image: linear-gradient(90deg, orange, red, rgb(242, 210, 0));
+    background-size: 400% 100%;
+    background-position: left;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+
 }
 
 .crono-btn-cont button:hover {
-    background-color: var(--orange1-hover);
+    background-position: right;
+
 }
 
 .crono-btn-cont button:active {

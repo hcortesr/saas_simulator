@@ -1,18 +1,21 @@
-
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     width: 100%;
+    padding: 10px 30px;
 }
+
 .logoBar {
     display: flex;
     flex-direction: row;
 
 }
+
 .profileBar {
     display: flex;
     flex-direction: row;
 }
+
 .profileBar-sub1 {
     display: flex;
 }

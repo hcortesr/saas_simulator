@@ -5,9 +5,7 @@ import { ProfileBar } from "./ProfileBar";
 export function Header() {
     return (
         <header className="header">
-            <LogoBar/>
-            <SearchBar/>
-            <ProfileBar/>
+            <LogoBar />
         </header>
     );
 }
